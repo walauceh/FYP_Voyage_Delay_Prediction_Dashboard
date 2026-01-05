@@ -52,6 +52,7 @@ st.markdown("""
         text-align: center;
         margin: 10px 0;
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        color: #1e1e1e;
     }
     .risk-low {
         background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
@@ -71,6 +72,10 @@ st.markdown("""
         border-radius: 10px;
         border-left: 4px solid #5e72e4;
         margin: 15px 0;
+        color: #1e1e1e;
+    }
+    .ai-recommendation h4 {
+        color: #1e1e1e;
     }
     .insight-card {
         background-color: #ffffff;
@@ -78,6 +83,13 @@ st.markdown("""
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0,0,0,0.08);
         margin: 10px 0;
+        color: #1e1e1e;
+    }
+    .insight-card h4 {
+        color: #1e1e1e;
+    }
+    .insight-card p {
+        color: #333333;
     }
     </style>
 """, unsafe_allow_html=True)
