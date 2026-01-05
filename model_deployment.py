@@ -760,7 +760,6 @@ def main():
             st.success("🤖 AI Assistant: Active")
         else:
             st.warning("🤖 AI Assistant: Disabled\n\nSet GEMINI_API_KEY to enable AI recommendations.")
-            print(AI_AVAILABLE)
     
     # ========================================================================
     # MAIN CONTENT AREA
