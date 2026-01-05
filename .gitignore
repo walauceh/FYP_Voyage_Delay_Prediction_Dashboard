@@ -5,6 +5,12 @@
 /model_evaluation
 /temp_data
 *.txt
-!requirements.txt
 *.csv
 *.pkl
+!requirements.txt
+!era5_weather_2024_sampled.csv
+!gdelt_events_clean_2024.csv
+!model_rf_classification_tuned.pkl
+!model_rfr_regression_tuned.pkl
+!scaler.pkl
+!preprocessing_params.pkl
