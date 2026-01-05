@@ -1,0 +1,9 @@
+.env
+/ais_data
+/daily_summaries
+/graphical analysis
+/model_evaluation
+/temp_data
+*.txt
+*.csv
+*.pkl
