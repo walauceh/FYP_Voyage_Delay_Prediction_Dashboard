@@ -12,6 +12,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 from plotly.subplots import make_subplots
 import os
+from dotenv import load_dotenv
 
 warnings.filterwarnings('ignore')
 
@@ -101,6 +102,7 @@ st.markdown("""
 # Initialize Gemini AI
 # From: https://makersuite.google.com/app/apikey
 
+load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 if GEMINI_API_KEY:
@@ -758,6 +760,7 @@ def main():
             st.success("🤖 AI Assistant: Active")
         else:
             st.warning("🤖 AI Assistant: Disabled\n\nSet GEMINI_API_KEY to enable AI recommendations.")
+            print(AI_AVAILABLE)
     
     # ========================================================================
     # MAIN CONTENT AREA
@@ -927,7 +930,7 @@ def main():
             with col1:
                 st.plotly_chart(
                     create_risk_gauge(risk_scores['total_risk'], "Overall Risk Score"),
-                    use_container_width=True
+                    width="stretch"
                 )
             
             with col2:
@@ -1017,7 +1020,7 @@ def main():
             with col1:
                 st.plotly_chart(
                     create_weather_chart(weather_features),
-                    use_container_width=True
+                    width="stretch"
                 )
             
             with col2:
@@ -1064,7 +1067,7 @@ def main():
             with col1:
                 st.plotly_chart(
                     create_geopolitical_chart(news_features),
-                    use_container_width=True
+                    width="stretch"
                 )
             
             with col2:
@@ -1130,8 +1133,6 @@ def main():
         - Current weather conditions
         - Geopolitical risk factors
         - Model predictions
-        
-        **To enable AI recommendations**: Set the `GEMINI_API_KEY` variable with your free API key from [Google AI Studio](https://makersuite.google.com/app/apikey).
         """)
 
 if __name__ == "__main__":
