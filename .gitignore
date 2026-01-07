@@ -14,3 +14,5 @@
 !model_rfr_regression_tuned.pkl
 !scaler.pkl
 !preprocessing_params.pkl
+!train_2020_2023.csv
+!test_2024.csv
